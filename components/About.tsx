@@ -1,5 +1,6 @@
 import { facts } from "@/data";
 import { Fact } from "@/types";
+import Image from "next/image"
 
 const interests = [
   "Healthcare-Associated Infections",
@@ -18,9 +19,13 @@ export const About = () => (
       <div className="relative flex justify-center lg:justify-start">
         <div className="relative w-[280px] h-[340px] md:w-[340px] md:h-[400px]">
           <div className="absolute -bottom-4 -right-4 w-full h-full rounded-3xl border border-[#C9A84C]/30 z-0" />
-          <div className="relative z-10 w-full h-full rounded-3xl bg-[#1A3A6B] flex items-center justify-center border border-[#C9A84C]/20 overflow-hidden">
-            {/* Replace with Image when you have a photo */}
-            <p className="text-6xl">👨‍⚕️</p>
+                   <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden border border-[#C9A84C]/20 bg-[#0F2347]">
+            <Image
+              src="/doctor.jpeg"
+              alt="Dr. Adekunle Misbau"
+              fill
+              className="object-cover object-top"
+            />
           </div>
           <div className="absolute -top-4 -right-4 z-20 bg-white rounded-2xl shadow-lg px-4 py-3 border border-gray-100 text-center">
             <p className="text-2xl font-extrabold text-[#1A3A6B]">5+</p>

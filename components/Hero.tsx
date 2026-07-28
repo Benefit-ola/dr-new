@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 const Hero = () => {
   return (
@@ -76,15 +76,14 @@ const Hero = () => {
             {/* glow */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#C9A84C]/10 to-transparent blur-xl z-0" />
             {/* image */}
-            <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden border border-[#C9A84C]/20 bg-[#0F2347] flex items-center justify-center">
-              {/* Replace with actual Image component when you have a photo:
-                <Image src="/doctor.jpg" alt="Dr. Amara Okafor" fill className="object-cover object-top" />
-              */}
-              <div className="text-center">
-                <p className="text-6xl mb-3">👨‍⚕️</p>
-                <p className="text-white/30 text-xs">Add your photo here</p>
-              </div>
-            </div>
+          <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden border border-[#C9A84C]/20 bg-[#0F2347]">
+  <Image
+    src="/doctor.jpeg"
+    alt="Dr. Adekunle Misbau"
+    fill
+    className="object-cover object-top"
+  />
+</div>
 
             {/* badge top right */}
             <div className="absolute -top-4 -right-4 z-20 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2 border border-gray-100">
